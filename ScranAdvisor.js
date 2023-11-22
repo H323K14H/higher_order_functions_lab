@@ -21,5 +21,8 @@ ScranAdvisor.prototype.getAllNames = function () {
     return this.restaurants.map((restaurant) => restaurant.name)
 }
 
+ScranAdvisor.prototype.getFromGlasgow = function () {
+    return this.restaurants.filter((restaurant) => restaurant.location.town === "Glasgow")
+}
 
 module.exports = ScranAdvisor;
