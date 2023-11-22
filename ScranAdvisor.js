@@ -17,5 +17,9 @@ ScranAdvisor.prototype.getByName = function (name) {
     return targetRestaurant;
 }
 
+ScranAdvisor.prototype.getAllNames = function () {
+    return this.restaurants.map((restaurant) => restaurant.name)
+}
+
 
 module.exports = ScranAdvisor;

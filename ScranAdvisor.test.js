@@ -41,7 +41,7 @@ describe('ScranAdvisor', () => {
     expect(actual).toEqual(expected);
   })
 
-  test.skip('can find the name of all restaurants', () => {
+  test('can find the name of all restaurants', () => {
     const expected = [
       'Oro',
       'Halloumi South',
@@ -67,7 +67,7 @@ describe('ScranAdvisor', () => {
       "Gopal's Corner Victoria",
       'The Gordon Highlander'
     ]
-    const actual = null;
+    const actual = scranAdvisor.getAllNames();
     expect(actual).toEqual(expected);
   })
 
