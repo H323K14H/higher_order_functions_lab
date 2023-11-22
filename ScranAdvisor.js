@@ -12,7 +12,6 @@ ScranAdvisor.prototype.getByName = function (name) {
     this.restaurants.forEach((restaurant) => {
         if (restaurant.name === name) {
             targetRestaurant = restaurant;
-            return; // Stop iterating after finding the matching restaurant
         }
     });
     return targetRestaurant;
