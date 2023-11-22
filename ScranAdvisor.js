@@ -3,8 +3,8 @@ const ScranAdvisor = function (restaurants) {
 }
 
 // Add methods to prototype
-ScranAdvisor.prototype.count = function (restaurants) {
-    return restaurants.length;
+ScranAdvisor.prototype.count = function () {
+    return this.restaurants.length;
 }
 
 ScranAdvisor.prototype.getByName = function (name) {
